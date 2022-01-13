@@ -41,7 +41,7 @@ public class HumanData {
 				System.out.println("입력 완료");
 				break;
 			case 4:
-				hd.delAdress(ar);
+				ar=hd.delAdress(ar);
 				break;
 			case 5:
 				System.out.println("시스템 종료");
