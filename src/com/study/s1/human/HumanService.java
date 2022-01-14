@@ -7,6 +7,7 @@ public class HumanService {
 	private Scanner sc;
 	
 	public HumanDTO addAdress(ArrayList <HumanDTO> ar) {
+		sc= new Scanner(System.in);
 		HumanDTO humanDTO = new HumanDTO();
 		System.out.println("이름 입력:");
 		humanDTO.setName(sc.next());
