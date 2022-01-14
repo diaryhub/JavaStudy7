@@ -5,13 +5,11 @@ import java.util.Scanner;
 
 public class HumanDelete {
 	Scanner sc;
-	public ArrayList <HumanDTO> delAdress(ArrayList <HumanDTO> ar) {
+	public boolean delAdress(ArrayList <HumanDTO> ar) {
 		sc=new Scanner(System.in);
+		boolean check = false;
 		HumanSearch hsearch = new HumanSearch();
 		HumanDTO humanDTO = hsearch.searchAdress(ar);
-		if(humanDTO == null) return ar;
-		ar.remove(humanDTO);
-		System.out.println("삭제 완료");
-		return ar;
+		return ar.remove(humanDTO);
 	}
 }

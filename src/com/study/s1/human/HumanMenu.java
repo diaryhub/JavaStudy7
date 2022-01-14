@@ -38,7 +38,8 @@ public class HumanMenu {
 				System.out.println("입력 완료");
 				break;
 			case 4:
-				ar = hd.delAdress(ar);
+				boolean check = hd.delAdress(ar);
+				if(check)System.out.println("삭제 완료");
 				break;
 			case 5:
 				System.out.println("시스템 종료");
